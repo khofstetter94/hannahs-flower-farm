@@ -8,13 +8,16 @@ function secretMessage(){
 }
 
 function askUserQuestion(){
-    let userNameInside = prompt('Please Enter Your Name');
-
-    console.log(userNameInside);
-
-    if(userNameInside === ''){
-        alert('Invalid response');
-    }
+    let userNameInside;
+    let userNameIsInvalid;
+    do {
+        userNameInside = prompt('Please Enter Your Name');
+        userNameIsInvalid = userNameInside === '';
+        if (userNameIsInvalid) {
+            alert('Invalid response, please enter a name');
+        }
+        console.log(userNameInside);
+    } while(userNameIsInvalid);
 
     if(userNameInside == 'Hannah'){
     document.write('Welcome to your garden ' + userNameInside)
