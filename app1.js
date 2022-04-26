@@ -1,14 +1,16 @@
-// console.log('Hello World');
+// function askUserQuestion(){
+//     let userNameInside = prompt('Please Enter Your Name');
 
-// let userName = 'KC';
-// console.log(userName);
+//     console.log(userNameInside);
 
-let userName = prompt('Please Enter Your Name');
+//     if(userNameInside == 'Hannah'){
+//     document.write('Welcome to your garden ' + userNameInside)
+//     } else {
+//     document.write("Welcome " + userNameInside)
+//     }
+//     return userNameInside;
+//     // return 'Hannah'
+// }
 
-console.log(userName);
-
-if(userName == 'Hannah'){
-    document.write('Welcome to your garden ' + userName)
-} else {
-    document.write("Welcome " + userName)
-}
+// let userNameOutside = askUserQuestion();
+// console.log(userNameOutside);
